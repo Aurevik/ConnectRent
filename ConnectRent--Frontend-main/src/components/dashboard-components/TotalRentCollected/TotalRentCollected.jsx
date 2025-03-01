@@ -1,30 +1,54 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
-import React from 'react';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import logo from "../../../assets/Images/logo.png"
-import Footer from '../../Footer-section/Footer';
-import RentNavbar from '../../Header-section/RentNavbar';
-import Navbar from '../../Header-section/Navbar';
+import { useState } from "react";
+import React from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../../assets/Images/logo.png";
+import Footer from "../../Footer-section/Footer";
+import RentNavbar from "../../Header-section/RentNavbar";
+import Navbar from "../../Header-section/Navbar";
 
-const FeatureCard = ({ icon, title, description, darkMode}) => (
-  <div className={`${darkMode ? 'bg-black' : 'bg-textWhite'} rounded-lg shadow-md p-6`}>
+const FeatureCard = ({ icon, title, description, darkMode }) => (
+  <div
+    className={`${darkMode ? "bg-black" : "bg-textWhite"} rounded-lg shadow-md p-6`}
+  >
     <div className="text-[#1abc9c] text-4xl mb-4">{icon}</div>
-    <h3 className={`text-xl font-semibold mb-2 ${darkMode ? 'text-textWhite' : 'text-black'}`}>{title}</h3>
-    <p className={`text-gray-600 ${darkMode ? 'text-textWhite' : 'text-black'}`}>{description}</p>
+    <h3
+      className={`text-xl font-semibold mb-2 ${darkMode ? "text-textWhite" : "text-black"}`}
+    >
+      {title}
+    </h3>
+    <p
+      className={`text-gray-600 ${darkMode ? "text-textWhite" : "text-black"}`}
+    >
+      {description}
+    </p>
   </div>
 );
 
-const TestimonialCard = ({ quote, author, role, darkMode}) => (
-  <div className={`${darkMode ? 'bg-black' : 'bg-textWhite'} rounded-lg shadow-md p-6`}>
-    <p className={`text-gray-600 italic mb-4 ${darkMode ? 'text-textWhite' : 'text-black'}`}>"{quote}"</p>
-    <p className={`font-semibold ${darkMode ? 'text-textWhite' : 'text-black'}`}>{author}</p>
-    <p className={`text-sm text-gray-500 ${darkMode ? 'text-textWhite' : 'text-black'}`}>{role}</p>
+const TestimonialCard = ({ quote, author, role, darkMode }) => (
+  <div
+    className={`${darkMode ? "bg-black" : "bg-textWhite"} rounded-lg shadow-md p-6`}
+  >
+    <p
+      className={`text-gray-600 italic mb-4 ${darkMode ? "text-textWhite" : "text-black"}`}
+    >
+      "{quote}"
+    </p>
+    <p
+      className={`font-semibold ${darkMode ? "text-textWhite" : "text-black"}`}
+    >
+      {author}
+    </p>
+    <p
+      className={`text-sm text-gray-500 ${darkMode ? "text-textWhite" : "text-black"}`}
+    >
+      {role}
+    </p>
   </div>
-)
+);
 
 const TotalRentCollected = () => {
   const [darkMode, setDarkMode] = useState(false); // Track theme state
@@ -36,9 +60,9 @@ const TotalRentCollected = () => {
     document.body.classList.toggle("dark", !darkMode);
   };
 
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gray-100">
       <RentNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
@@ -46,17 +70,26 @@ const TotalRentCollected = () => {
       <main>
         <section className="bg-[#1abc9c] text-textWhite py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-4">Simplify Your Rent Collection</h2>
-            <p className="text-xl mb-8">Streamline your property management with our powerful rent collection system</p>
-            <Link to="/login"><button className=" bg-textWhite text-[#1abc9c] font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition-colors">
-              Get Started
-            </button></Link>
+            <h2 className="text-4xl font-bold mb-4">
+              Simplify Your Rent Collection
+            </h2>
+            <p className="text-xl mb-8">
+              Streamline your property management with our powerful rent
+              collection system
+            </p>
+            <Link to="/login">
+              <button className=" bg-textWhite text-[#1abc9c] font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition-colors">
+                Get Started
+              </button>
+            </Link>
           </div>
         </section>
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Features</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Our Features
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <FeatureCard
                 icon="📊"
@@ -82,7 +115,9 @@ const TotalRentCollected = () => {
 
         <section className="bg-[#cd4347] text-textWhite py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 text-black">Why Choose rentalog?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-black">
+              Why Choose ConnectRent?
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div>
                 <p className="text-4xl font-bold mb-2 text-[#1200ff]">98%</p>
@@ -106,10 +141,12 @@ const TotalRentCollected = () => {
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              What Our Clients Say
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <TestimonialCard
-                quote="rentalog has revolutionized how we manage our properties. Rent collection has never been easier!"
+                quote="ConnectRent has revolutionized how we manage our properties. Rent collection has never been easier!"
                 author="Sarah Johnson"
                 role="Property Manager, Urban Living Co."
                 darkMode={darkMode}
@@ -126,14 +163,21 @@ const TotalRentCollected = () => {
 
         <section className="bg-gray-dark text-textWhite py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">Ready to Simplify Your Rent Collection?</h2>
-            <p className="text-xl mb-8">Join thousands of satisfied property managers and start streamlining your processes today.</p>
-            <Link to="/login"><button className="bg-[#1abc9c] text-textWhite font-bold py-3 px-8 rounded-full hover:bg-[#16a085] transition-colors">
-              Start Your Free Trial
-            </button></Link>
+            <h2 className="text-3xl font-bold mb-8">
+              Ready to Simplify Your Rent Collection?
+            </h2>
+            <p className="text-xl mb-8">
+              Join thousands of satisfied property managers and start
+              streamlining your processes today.
+            </p>
+            <Link to="/login">
+              <button className="bg-[#1abc9c] text-textWhite font-bold py-3 px-8 rounded-full hover:bg-[#16a085] transition-colors">
+                Start Your Free Trial
+              </button>
+            </Link>
           </div>
         </section>
-    <Footer/>
+        <Footer />
       </main>
     </div>
   );

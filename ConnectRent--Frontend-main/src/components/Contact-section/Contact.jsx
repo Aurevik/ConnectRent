@@ -5,7 +5,7 @@ import "./Contact-section.css";
 import Github from "../../assets/Social-Icons/Github.png";
 import Insta from "../../assets/Social-Icons/instagram.png";
 import { RiTwitterXFill } from "react-icons/ri";
-import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import clickSound from "../../assets/mixkit-mouse-click-close-1113.wav";
 
 const Contact = () => {
@@ -54,7 +54,7 @@ const Contact = () => {
               <p>
                 Email:
                 <a
-                  href="mailto:support@rentalog.in"
+                  href="mailto:support@ConnectRent.in"
                   className="ml-1 font-bold underline text-primaryGreen"
                 >
                   connect.aurevik@gmail.com
@@ -66,19 +66,17 @@ const Contact = () => {
                   href="tel:+91"
                   className="ml-1 font-bold underline text-primaryGreen"
                 >
-                  +91 
+                  +91
                 </a>
               </p>
               <p>
                 Address: NIT Warangal <br /> Telangana, 506004
               </p>
             </div>
-            <button 
+            <button
               className="bg-primary-green rounded-2xl w-[100px] p-3 font-semibold text-text-white mt-4"
               onClick={playSound}
-            >
-              
-            </button>
+            ></button>
           </article>
         </div>
         <div className="md:w-1/2">

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react"; // Import useState
+import React, { useState, useEffect } from "react"; // Import useState
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/Images/logo.png";
@@ -27,10 +27,8 @@ export default function Login() {
   const handleShowPassword = () => setShowPassword(!showPassword);
 
   useEffect(() => {
-  
-          Aos.init();
-      
-        }, []);
+    Aos.init();
+  }, []);
 
   // Function to validate email domain
   const isValidEmailDomain = (email) => {
@@ -42,7 +40,7 @@ export default function Login() {
     //console.log(data);
     // Perform login logic here
     // If successful, navigate to admin dashboard
-    localStorage.setItem("userToken",data.email);
+    localStorage.setItem("userToken", data.email);
     navigate("/admin-dashboard");
     reset(); // Reset form after successful submission
   };
@@ -52,7 +50,10 @@ export default function Login() {
       <Navbar />
       <br className="hidden xl:block"></br>
       <section className="flex flex-row justify-baseline items-center">
-        <div  data-aos="fade-right" className="hidden w-full lg:flex lg:mt-12 flex-col lg:justify-start xl:justify-center xl:h-full">
+        <div
+          data-aos="fade-right"
+          className="hidden w-full lg:flex lg:mt-12 flex-col lg:justify-start xl:justify-center xl:h-full"
+        >
           <div className="mb-10 mx-10 mr-auto hover:scale-110 transition duration-300 ease-in-out">
             <h2 className="text-3xl font-bold ">
               <span className="text-customRed italic">Best way</span> to manage
@@ -226,7 +227,7 @@ const Navbar = () => {
   return (
     <div className="absolute top-4 left-4">
       <Link to="/">
-        <img src={logo} alt="Rentalog-logo" className="h-12 w-auto" />
+        <img src={logo} alt="ConnectRent-logo" className="h-12 w-auto" />
       </Link>
     </div>
   );
@@ -234,7 +235,10 @@ const Navbar = () => {
 
 const TitleCard = () => {
   return (
-    <div data-aos="fade-left" className="flex flex-col hover:scale-110 transition duration-300 ease-in-out" >
+    <div
+      data-aos="fade-left"
+      className="flex flex-col hover:scale-110 transition duration-300 ease-in-out"
+    >
       <h2 className="mt-16 text-left text-3xl font-extrabold leading-9 tracking-tight ">
         <span className="text-customRed text-4xl">Welcome</span>
         <span> back!!</span>

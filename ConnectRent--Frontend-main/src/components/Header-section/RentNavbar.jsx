@@ -15,11 +15,10 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home"); // Track active section
 
   if (showMenu) {
-
     return (
       <>
         <div className="md:hidden bg-[#1ABC9C] fixed w-full z-20 top-0 left-0 h-full flex justify-center items-center">
-          <ProgressBar/>
+          <ProgressBar />
           <button
             // onClick={() => {
             //   setShowMenu("");
@@ -33,7 +32,7 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <img
                 className="self-start w-40 "
                 src={logo}
-                alt="Rentalog-logo"
+                alt="ConnectRent-logo"
               />
             </div>
 
@@ -43,9 +42,9 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <a href="#home" aria-current="page">
                 <div
                   className="text-textWhite "
-                //   onClick={() => {
-                //     setShowMenu("");
-                //   }}
+                  //   onClick={() => {
+                  //     setShowMenu("");
+                  //   }}
                 >
                   HOME
                 </div>
@@ -54,19 +53,17 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <a href="#Service" aria-current="page">
                 <div
                   className="text-textWhite "
-                //   onClick={() => {
-                //     setShowMenu("");
-                //   }}
-                >
-                 
-                </div>
+                  //   onClick={() => {
+                  //     setShowMenu("");
+                  //   }}
+                ></div>
               </a>
               <a href="#AboutUs" aria-current="page">
                 <div
                   className="text-textWhite "
-                //   onClick={() => {
-                //     setShowMenu("");
-                //   }}
+                  //   onClick={() => {
+                  //     setShowMenu("");
+                  //   }}
                 >
                   ABOUT
                 </div>
@@ -74,9 +71,9 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <a href="#ContactUs" aria-current="page">
                 <div
                   className="text-textWhite "
-                //   onClick={() => {
-                //     setShowMenu("");
-                //   }}
+                  //   onClick={() => {
+                  //     setShowMenu("");
+                  //   }}
                 >
                   CONTACT
                 </div>
@@ -84,21 +81,21 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <a href="#FAQ" aria-current="page">
                 <div
                   className="text-textWhite"
-                //   onClick={() => {
-                //     setShowMenu("");
-                //   }}
+                  //   onClick={() => {
+                  //     setShowMenu("");
+                  //   }}
                 >
-                 FAQ
+                  FAQ
                 </div>
               </a>
               <a href="/" aria-current="page">
                 <div
                   className="text-textWhite"
-                //   onClick={() => {
-                //     setShowMenu("");
-                //   }}
+                  //   onClick={() => {
+                  //     setShowMenu("");
+                  //   }}
                 >
-                 FAQ
+                  FAQ
                 </div>
               </a>
               <div className="text-gray-dark">
@@ -132,7 +129,7 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
         </div>
       </>
     );
-  } 
+  }
 
   return (
     <>
@@ -157,7 +154,7 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <img
                 className="self-start w-40 navbar my-auto"
                 src={logo}
-                alt="Rentalog-logo"
+                alt="ConnectRent-logo"
               />
             </a>
           </div>

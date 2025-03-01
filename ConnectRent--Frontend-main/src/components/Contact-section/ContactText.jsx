@@ -21,7 +21,7 @@ export const ContactText = () => {
           <p>
             Email:{" "}
             <a
-              href="mailto:support@rentalog.in"
+              href="mailto:support@ConnectRent.in"
               className="ml-1 font text-gray-800 underline"
             >
               {" "}
@@ -37,7 +37,6 @@ export const ContactText = () => {
           <p>
             Chat With Us:{" "}
             <a href="" className="ml-1 font text-gray-800 underline">
-              {" "}
               {" "}
             </a>
           </p>

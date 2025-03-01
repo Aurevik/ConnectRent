@@ -16,7 +16,7 @@ function Contributors() {
       try {
         while (true) {
           const response = await axios.get(
-            `https://api.github.com/repos/gauravsingh1281/Rentalog.in--Frontend/contributors`,
+            `https://api.github.com/repos/gauravsingh1281/ConnectRent.in--Frontend/contributors`,
             {
               params: { per_page: 100, page },
             }
@@ -38,7 +38,7 @@ function Contributors() {
     async function fetchRepoStats() {
       try {
         const response = await axios.get(
-          `https://api.github.com/repos/gauravsingh1281/Rentalog.in--Frontend`
+          `https://api.github.com/repos/gauravsingh1281/ConnectRent.in--Frontend`
         );
         setRepoStats(response.data);
       } catch (error) {
