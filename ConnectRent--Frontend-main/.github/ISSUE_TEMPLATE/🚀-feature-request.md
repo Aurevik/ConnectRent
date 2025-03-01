@@ -1,10 +1,9 @@
 ---
 name: "\U0001F680 Feature Request"
-about: Suggest an idea to improve the Rentalog.in frontend
+about: Suggest an idea to improve the ConnectRent.in frontend
 title: "[FEATURE]"
-labels: ''
-assignees: ''
-
+labels: ""
+assignees: ""
 ---
 
 ### 🚀 Feature Request
@@ -37,9 +36,10 @@ Add any other context, screenshots, or details that would help explain your requ
 
 ---
 
-### Checklist  
-- [ ] I have checked the existing issues and this feature request is not a duplicate.  
-- [ ] I have **starred this repository**.  
+### Checklist
+
+- [ ] I have checked the existing issues and this feature request is not a duplicate.
+- [ ] I have **starred this repository**.
 - [ ] I am willing to help implement this feature (optional).
 
 **Additional context**

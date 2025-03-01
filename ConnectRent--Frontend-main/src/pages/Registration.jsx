@@ -1,12 +1,8 @@
-
 import { useState } from "react";
-
 
 import { Link, useNavigate } from "react-router-dom";
 
-
 import logo from "../assets/Images/logo.png";
-
 
 import { useForm } from "react-hook-form";
 import zxcvbn from "zxcvbn";
@@ -14,7 +10,12 @@ import zxcvbn from "zxcvbn";
 export default function Registration() {
   const navigate = useNavigate();
 
-  const { register, handleSubmit, formState: { errors }, setError } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setError,
+  } = useForm();
 
   const [form, setForm] = useState({
     name: "",
@@ -23,13 +24,21 @@ export default function Registration() {
     confirmPassword: "",
   });
 
-  const allowedDomains = ["gmail.com", "outlook.com", "yahoo.com", "protonmail.com", "icloud.com", "tutanota.com"];
+  const allowedDomains = [
+    "gmail.com",
+    "outlook.com",
+    "yahoo.com",
+    "protonmail.com",
+    "icloud.com",
+    "tutanota.com",
+  ];
 
   const [showPassword, setShowPassword] = useState(false);
   const handleShowPassword = () => setShowPassword(!showPassword);
 
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const handleShowConfirmPassword = () => setShowConfirmPassword(!showConfirmPassword);
+  const handleShowConfirmPassword = () =>
+    setShowConfirmPassword(!showConfirmPassword);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -48,11 +57,15 @@ export default function Registration() {
       score,
       label: labels[score],
       color:
-        score === 0 ? "#d73f40" :
-          score === 1 ? "#dc6551" :
-            score === 2 ? "#f2b84f" :
-              score === 3 ? "#bde952" :
-                "#3ba62f",
+        score === 0
+          ? "#d73f40"
+          : score === 1
+            ? "#dc6551"
+            : score === 2
+              ? "#f2b84f"
+              : score === 3
+                ? "#bde952"
+                : "#3ba62f",
     };
   };
 
@@ -64,14 +77,13 @@ export default function Registration() {
     return allowedDomains.includes(emailDomain);
   };
 
-
   const onSubmit = (data) => {
     // Validate email domain
     if (!isValidEmailDomain(data.email)) {
       setError("email", {
         type: "manual",
-        message: "Please use an email from a reputable provider (e.g., Gmail, Outlook, Yahoo, Protonmail, icloud, tutanota)."
-
+        message:
+          "Please use an email from a reputable provider (e.g., Gmail, Outlook, Yahoo, Protonmail, icloud, tutanota).",
       });
       return;
     }
@@ -87,21 +99,26 @@ export default function Registration() {
       password: "",
       confirmPassword: "",
     });
-
   };
 
   return (
     <article className="flex relative flex-col justify-center h-[100vh] bg-primaryGreen/10 overflow-hidden">
-      <div className="lg:hidden"><Navbar/></div>
-      <section className="mt-2 flex flex-col lg:flex-row w-full lg:w-4/5 items-center justify-center mx-auto p-6 border border-gray-300 bg-primaryGreen/10 lg:rounded-bl-3xl lg:rounded-tl-3xl py-4 lg:py-0 mt-4 lg:mt-0" style={{ padding: "0.8rem" }}>
-  {/* Section content */}
-        
+      <div className="lg:hidden">
+        <Navbar />
+      </div>
+      <section
+        className="mt-2 flex flex-col lg:flex-row w-full lg:w-4/5 items-center justify-center mx-auto p-6 border border-gray-300 bg-primaryGreen/10 lg:rounded-bl-3xl lg:rounded-tl-3xl py-4 lg:py-0 mt-4 lg:mt-0"
+        style={{ padding: "0.8rem" }}
+      >
+        {/* Section content */}
+
         {/* Left Side - Text and Image */}
         <div className="hidden lg:flex w-full lg:w-[50%] flex-col items-start lg:items-center justify-center p-4">
           <Navbar />
           <div className="mb-6">
             <h2 className="text-3xl font-bold">
-              <span className="text-customRed italic">Best way</span> to manage your rent
+              <span className="text-customRed italic">Best way</span> to manage
+              your rent
             </h2>
             <p className="mt-2">
               Create a new account to access all the features of our website
@@ -241,25 +258,35 @@ export default function Registration() {
               )}
 
               {/* Submit Button */}
-              <button type="submit" className="btn2 px-4 py-2 w-full rounded-lg bg-blue-500 text-white">
+              <button
+                type="submit"
+                className="btn2 px-4 py-2 w-full rounded-lg bg-blue-500 text-white"
+              >
                 Register
               </button>
-   
 
               {/* Social Buttons */}
               <div className="flex items-center justify-center space-x-4 mt-4">
-                <Link to="https://www.google.com/" className="flex items-center border bg-white border-[#c7c5c5] w-1/3 h-10 justify-center rounded-lg">
+                <Link
+                  to="https://www.google.com/"
+                  className="flex items-center border bg-white border-[#c7c5c5] w-1/3 h-10 justify-center rounded-lg"
+                >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                     alt="Google logo"
-                    className="h-5" style={{ margin: "0px" }}
+                    className="h-5"
+                    style={{ margin: "0px" }}
                   />
                 </Link>
-                <Link to="https://www.facebook.com/" className="flex items-center border bg-white border-[#c7c5c5] w-1/3 h-10 justify-center rounded-lg">
+                <Link
+                  to="https://www.facebook.com/"
+                  className="flex items-center border bg-white border-[#c7c5c5] w-1/3 h-10 justify-center rounded-lg"
+                >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
                     alt="Facebook logo"
-                    className="h-5" style={{ margin: "0px" }}
+                    className="h-5"
+                    style={{ margin: "0px" }}
                   />
                 </Link>
               </div>
@@ -275,24 +302,25 @@ export default function Registration() {
                 </Link>
               </p>
               <div className="flex justify-center">
-      <button
-        type="button"
-        onClick={handleBackToHome} // Navigate to home on click
-        className="btn2 px-4 py-2 rounded-lg bg-blue-500 text-white flex items-center justify-center shadow hover:bg-blue-600 transition duration-200 ease-in-out" style={{width:"200px", fontWeight:'500', fontSize:"16px", marginTop:"0.4rem"}}
-      >
-        &larr; Back to Home
-      </button>
-      </div>
+                <button
+                  type="button"
+                  onClick={handleBackToHome} // Navigate to home on click
+                  className="btn2 px-4 py-2 rounded-lg bg-blue-500 text-white flex items-center justify-center shadow hover:bg-blue-600 transition duration-200 ease-in-out"
+                  style={{
+                    width: "200px",
+                    fontWeight: "500",
+                    fontSize: "16px",
+                    marginTop: "0.4rem",
+                  }}
+                >
+                  &larr; Back to Home
+                </button>
+              </div>
             </form>
           </div>
         </div>
       </section>
       {/* Submit Button */}
-     
-
-
-
-
     </article>
   );
 }
@@ -301,21 +329,21 @@ const Navbar = () => {
   return (
     <div className="relative top-[-7px] flex items-center justify-center lg:left-[-171px] lg:top-0 ">
       <Link to="/">
-        <img src={logo} alt="Rentalog-logo" className="h-12 w-auto lg:mt-[-1rem]" />
+        <img
+          src={logo}
+          alt="ConnectRent-logo"
+          className="h-12 w-auto lg:mt-[-1rem]"
+        />
       </Link>
-      </div>
+    </div>
   );
 };
 
 const TitleCard = () => {
   return (
     <div>
-      <h2 className="text-3xl text-center font-bold mb-2">
-        Create Account
-      </h2>
-      <p className="text-center">
-        Join us for seamless rental management
-      </p>
+      <h2 className="text-3xl text-center font-bold mb-2">Create Account</h2>
+      <p className="text-center">Join us for seamless rental management</p>
     </div>
   );
 };

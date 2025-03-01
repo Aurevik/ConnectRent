@@ -29,7 +29,7 @@ body {
   object-fit: cover;
 }
 
-.rentalog-logo {
+.ConnectRent-logo {
   display: block;
   margin: 0;
   height: 70px;
@@ -152,7 +152,7 @@ body {
     padding: 20px;
   }
 
-  .rentalog-logo {
+  .ConnectRent-logo {
     height: 50px;
     width: auto;
     left: 20px;
@@ -195,7 +195,7 @@ body {
     padding: 10px;
   }
 
-  .rentalog-logo {
+  .ConnectRent-logo {
     height: 40px;
     width: auto;
     left: 30px;

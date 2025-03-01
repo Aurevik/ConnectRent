@@ -4,21 +4,21 @@ import logo from "../assets/Images/logo.png";
 import { Link } from "react-router-dom";
 
 const allowedDomains = [
-    "gmail.com",
-    "outlook.com",
-    "yahoo.com",
-    "protonmail.com",
-    "icloud.com",
-    "tutanota.com",
-  ];
+  "gmail.com",
+  "outlook.com",
+  "yahoo.com",
+  "protonmail.com",
+  "icloud.com",
+  "tutanota.com",
+];
 const ForgotPassword = () => {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-        reset,
-      } = useForm();
-       // Function to validate email domain
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  // Function to validate email domain
   const isValidEmailDomain = (email) => {
     const domain = email.substring(email.lastIndexOf("@") + 1);
     return allowedDomains.includes(domain);
@@ -26,7 +26,7 @@ const ForgotPassword = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    reset(); 
+    reset();
   };
   return (
     <div>
@@ -52,89 +52,84 @@ const ForgotPassword = () => {
           </div>
 
           <div className="flex mx-auto max-w-7xl w-full lg:w-[75vw] h-screen xl:h-fit justify-between lg:rounded-bl-3xl lg:rounded-tl-3xl bg-primaryGreen/10">
-          <div className="w-full h-[100vh] flex flex-col justify-start mt-20 lg:mt-0 lg:justify-center items-center">
-            <TitleCard />
+            <div className="w-full h-[100vh] flex flex-col justify-start mt-20 lg:mt-0 lg:justify-center items-center">
+              <TitleCard />
 
-            {/* Form using react-hook-form */}
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="mt-8 space-y-5 w-[70%] md:w-[50%] lg:w-[60%]"
-            >
-              {/* Email Input */}
-              <Input
-                type="text"
-                placeholder="Enter email address"
-                {...register("email", {
-                  required: "Email is required",
-                  pattern: {
-                    value: /\S+@\S+\.\S+/,
-                    message: "Invalid email format",
-                  },
-                  validate: {
-                    domainCheck: (value) =>
-                      isValidEmailDomain(value) ||
-                      "Please use an email from a reputable provider (e.g., Gmail, Outlook, Yahoo, Protonmail, icloud, tutanota).",
-                  },
-                })}
-                className="input-bar"
-              />
-              <span className="pl-4 text-[#ff0000] text-sm">
-                {errors.email && errors.email.message}
-              </span>
+              {/* Form using react-hook-form */}
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="mt-8 space-y-5 w-[70%] md:w-[50%] lg:w-[60%]"
+              >
+                {/* Email Input */}
+                <Input
+                  type="text"
+                  placeholder="Enter email address"
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /\S+@\S+\.\S+/,
+                      message: "Invalid email format",
+                    },
+                    validate: {
+                      domainCheck: (value) =>
+                        isValidEmailDomain(value) ||
+                        "Please use an email from a reputable provider (e.g., Gmail, Outlook, Yahoo, Protonmail, icloud, tutanota).",
+                    },
+                  })}
+                  className="input-bar"
+                />
+                <span className="pl-4 text-[#ff0000] text-sm">
+                  {errors.email && errors.email.message}
+                </span>
 
-              <div>
-                <button
-                  type="submit"
-                  className="border-2 border-green h-10 bg-primaryGreen w-full py-1 rounded-xl focus:shadow-md hover:bg-primaryGreen/80 text-textWhite font-semibold mt-1"
-                >
-                 Reset Password
-                </button>
-              </div>
-
-
-              
-            </form>
+                <div>
+                  <button
+                    type="submit"
+                    className="border-2 border-green h-10 bg-primaryGreen w-full py-1 rounded-xl focus:shadow-md hover:bg-primaryGreen/80 text-textWhite font-semibold mt-1"
+                  >
+                    Reset Password
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
         </section>
-
       </article>
     </div>
   );
 };
 
 const Navbar = () => {
-    return (
-      <div className="absolute top-4 left-4">
-        <Link to="/">
-          <img src={logo} alt="Rentalog-logo" className="h-12 w-auto" />
-        </Link>
-      </div>
-    );
-  };
+  return (
+    <div className="absolute top-4 left-4">
+      <Link to="/">
+        <img src={logo} alt="ConnectRent-logo" className="h-12 w-auto" />
+      </Link>
+    </div>
+  );
+};
 
-  const TitleCard = () => {
-    return (
-      <div className="flex flex-col justify-start items-start">
-        <h2 className="mt-16 text-left text-4xl font-extrabold leading-9 tracking-tight text-customRed">
-          Forgot
-        </h2>
-        <h2 className="mt-2 text-left text-4xl font-extrabold leading-9 tracking-tight text-gray-dark/90">
-          Your Password?
-        </h2>
-        
-      </div>
-    );
-  };
-  const Input = React.forwardRef(({ ...rest }, ref) => {
-    return (
-      <div className="flex flex-col">
-        <input
-          {...rest}
-          ref={ref}
-          className="bg-[#FAFAFA] p-2 border border-[#dedede] outline-none rounded-xl focus:shadow-md"
-        />
-      </div>
-    );
-  });
+const TitleCard = () => {
+  return (
+    <div className="flex flex-col justify-start items-start">
+      <h2 className="mt-16 text-left text-4xl font-extrabold leading-9 tracking-tight text-customRed">
+        Forgot
+      </h2>
+      <h2 className="mt-2 text-left text-4xl font-extrabold leading-9 tracking-tight text-gray-dark/90">
+        Your Password?
+      </h2>
+    </div>
+  );
+};
+const Input = React.forwardRef(({ ...rest }, ref) => {
+  return (
+    <div className="flex flex-col">
+      <input
+        {...rest}
+        ref={ref}
+        className="bg-[#FAFAFA] p-2 border border-[#dedede] outline-none rounded-xl focus:shadow-md"
+      />
+    </div>
+  );
+});
 export default ForgotPassword;
