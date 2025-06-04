@@ -35,7 +35,7 @@ export default function PaymentsRecord() {
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="px-4 bg-textWhite w-fit rounded-xl absolute top-0 left-0 m-[1.5rem]">
-          <img className="self-start w-40" src={logo} alt="ConnectRent-logo" />
+          <img className="self-start w-40" src={logo} alt="Aurevik-logo" />
         </div>
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Payments Record

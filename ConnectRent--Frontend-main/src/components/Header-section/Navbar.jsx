@@ -50,7 +50,7 @@ const Navbar = () => {
               className="self-start navbar my-auto"
               style={{ height: "70px", width: "15rem" }}
               src={logo}
-              alt="ConnectRent-logo"
+              alt="Aurevik-logo"
             />
           </a>
         </div>

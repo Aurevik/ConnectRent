@@ -9,7 +9,7 @@ const TermsAndConditions = () => {
       <section>
         <h2>1. Introduction</h2>
         <p>
-          Welcome to ConnectRent, your trusted platform for managing rental
+          Welcome to Aurevik, your trusted platform for managing rental
           properties. By accessing or using this website, you agree to comply
           with these terms and conditions.
         </p>
@@ -38,7 +38,7 @@ const TermsAndConditions = () => {
         <h2>4. Payments and Fees</h2>
         <p>
           Payment processing is handled through secure third-party services.
-          ConnectRent is not liable for any issues related to payment failures,
+          Aurevik is not liable for any issues related to payment failures,
           processing delays, or discrepancies in rental amounts.
         </p>
       </section>
@@ -46,7 +46,7 @@ const TermsAndConditions = () => {
       <section>
         <h2>5. Limitation of Liability</h2>
         <p>
-          ConnectRent is not responsible for any disputes that arise between
+          Aurevik is not responsible for any disputes that arise between
           landlords and tenants, including but not limited to lease violations,
           non-payment, or damages to the property.
         </p>
@@ -55,8 +55,8 @@ const TermsAndConditions = () => {
       <section>
         <h2>6. Termination</h2>
         <p>
-          ConnectRent reserves the right to terminate or suspend user accounts
-          if there is evidence of fraudulent activity, violation of terms, or
+          Aurevik reserves the right to terminate or suspend user accounts if
+          there is evidence of fraudulent activity, violation of terms, or
           misuse of the platform.
         </p>
       </section>

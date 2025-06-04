@@ -8,54 +8,54 @@ import {
 
 const faqData = [
   {
-    question: "What is ConnectRent?",
+    question: "What is Aurevik?",
     answer:
-      "ConnectRent is a free rent management web app designed for landlords to keep track of renter information, rent payment history, and property listings.",
+      "Aurevik is a free rent management web app designed for landlords to keep track of renter information, rent payment history, and property listings.",
   },
   {
     question: "How can I store tenant information?",
     answer:
-      "ConnectRent allows you to store important information such as the tenant's name, address, and phone number, making it easy to access whenever needed.",
+      "Aurevik allows you to store important information such as the tenant's name, address, and phone number, making it easy to access whenever needed.",
   },
   {
-    question: "Can ConnectRent track rent payments?",
+    question: "Can Aurevik track rent payments?",
     answer:
-      "Yes, ConnectRent tracks monthly rent payments for all your tenants and provides a complete overview of your rental income.",
+      "Yes, Aurevik tracks monthly rent payments for all your tenants and provides a complete overview of your rental income.",
   },
   {
     question: "Is there a way to automatically calculate total rent?",
     answer:
-      "Yes, ConnectRent automatically calculates the total rent received each month and offers a breakdown of payments by tenant.",
+      "Yes, Aurevik automatically calculates the total rent received each month and offers a breakdown of payments by tenant.",
   },
   {
-    question: "Can I list my properties on ConnectRent?",
+    question: "Can I list my properties on Aurevik?",
     answer:
-      "Yes, you can list your rental properties on ConnectRent and keep all information organized in one place.",
+      "Yes, you can list your rental properties on Aurevik and keep all information organized in one place.",
   },
   {
-    question: "Is ConnectRent secure for storing tenant information?",
+    question: "Is Aurevik secure for storing tenant information?",
     answer:
-      "ConnectRent takes security seriously and ensures that all tenant information is stored securely with proper encryption.",
+      "Aurevik takes security seriously and ensures that all tenant information is stored securely with proper encryption.",
   },
   {
-    question: "How do I add a new tenant in ConnectRent?",
+    question: "How do I add a new tenant in Aurevik?",
     answer:
       "To add a new tenant, go to the Tenant Management section and fill in the required details like name, address, and contact information.",
   },
   {
-    question: "Can I track multiple properties in ConnectRent?",
+    question: "Can I track multiple properties in Aurevik?",
     answer:
-      "Yes, ConnectRent supports tracking multiple rental properties, allowing you to manage information for all your rentals in one platform.",
+      "Yes, Aurevik supports tracking multiple rental properties, allowing you to manage information for all your rentals in one platform.",
   },
   {
-    question: "Is ConnectRent free to use?",
+    question: "Is Aurevik free to use?",
     answer:
-      "Yes, ConnectRent is completely free to use for all landlords looking to manage their tenant information and rental payments.",
+      "Yes, Aurevik is completely free to use for all landlords looking to manage their tenant information and rental payments.",
   },
   {
     question: "How do I track missed or late payments?",
     answer:
-      "ConnectRent helps you track any missed or late payments, ensuring that you stay on top of your rental income.",
+      "Aurevik helps you track any missed or late payments, ensuring that you stay on top of your rental income.",
   },
 ];
 

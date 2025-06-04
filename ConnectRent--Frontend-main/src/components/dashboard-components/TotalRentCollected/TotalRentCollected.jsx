@@ -116,7 +116,7 @@ const TotalRentCollected = () => {
         <section className="bg-[#cd4347] text-textWhite py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-black">
-              Why Choose ConnectRent?
+              Why Choose Aurevik?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div>
@@ -146,7 +146,7 @@ const TotalRentCollected = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <TestimonialCard
-                quote="ConnectRent has revolutionized how we manage our properties. Rent collection has never been easier!"
+                quote="Aurevik has revolutionized how we manage our properties. Rent collection has never been easier!"
                 author="Sarah Johnson"
                 role="Property Manager, Urban Living Co."
                 darkMode={darkMode}

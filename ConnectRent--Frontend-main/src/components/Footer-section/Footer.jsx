@@ -1,6 +1,12 @@
 import { useState } from "react";
 import logo from "../../assets/Images/logo.png";
-import { FaDiscord, FaFacebook, FaGithub, FaInstagram, FaLinkedin ,} from "react-icons/fa";
+import {
+  FaDiscord,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 import { LuSendHorizonal } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -83,8 +89,8 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">About Us</h3>
             <p className="my-2 pb-1">
-              ConnectRent is the ultimate solution for landlords looking to
-              simplify their rent management process.
+              Aurevik is the ultimate solution for landlords looking to simplify
+              their rent management process.
             </p>
             <img
               className="bg-[white] mx-auto lg:mx-0 hover:cursor-pointer px-1 rounded-xl mb-2 h-[40px] w-[150px] hover:shadow-l hover:scale-105 transition duration-300 ease-in-out"

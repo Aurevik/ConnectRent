@@ -1,6 +1,6 @@
 ---
 name: "\U0001F4DD Other Issue"
-about: Report miscellaneous issues related to the ConnectRent.in frontend
+about: Report miscellaneous issues related to the Aurevik.in frontend
 title: "[OTHER]"
 labels: ""
 assignees: ""

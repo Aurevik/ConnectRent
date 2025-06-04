@@ -12,7 +12,7 @@ const Preloader = () => {
           className="animate-stroke"
           style={{ fontWeight: "bold" }}
         >
-          ConnectRent
+          Aurevik
         </text>
       </svg>
     </div>

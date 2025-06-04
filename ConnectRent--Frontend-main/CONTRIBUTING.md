@@ -1,12 +1,12 @@
 # Contributing Guidelines 🎯
 
-Thank you for your interest in contributing to **ConnectRent.in**! We welcome contributions from everyone, whether you're fixing bugs, suggesting new features, improving documentation, or helping with testing.
+Thank you for your interest in contributing to **Aurevik.in**! We welcome contributions from everyone, whether you're fixing bugs, suggesting new features, improving documentation, or helping with testing.
 
 <br>
 
 # Code of Conduct 📖
 
-Please read and follow our [Code of Conduct.](https://github.com/gauravsingh1281/ConnectRent.in--Frontend/blob/main/Code%20of%20Conduct.md)
+Please read and follow our [Code of Conduct.](https://github.com/gauravsingh1281/Aurevik.in--Frontend/blob/main/Code%20of%20Conduct.md)
 
 <br>
 
@@ -25,7 +25,7 @@ If you're new to Git and GitHub, no worries! Here are some useful resources:
 # Project Structure 📂
 
 ```bash
-ConnectRent.IN--FRONTEND/
+Aurevik.IN--FRONTEND/
 ├── .github/                  # GitHub-related configurations such as workflows, issue templates, etc
 │
 ├── public/                   # All the images for the reference of the public are included here
@@ -66,7 +66,7 @@ ConnectRent.IN--FRONTEND/
 # Types of Contributions
 
 **Bug Reports**
-If you find a bug, please open an issue in the [Issues](https://github.com/gauravsingh1281/ConnectRent.in--Frontend/issues/new/choose) section. Include the following information:
+If you find a bug, please open an issue in the [Issues](https://github.com/gauravsingh1281/Aurevik.in--Frontend/issues/new/choose) section. Include the following information:
 
 - While raising an issue please kindly choose the appropriate template according to your issue.
 - Steps to reproduce the bug.
@@ -108,13 +108,13 @@ If you're interested in contributing to the design aspnect, please create mockup
 3. **Clone the forked repository**
 
 ```bash
-git clone https://github.com/<your-github-username>/ConnectRent.in--Frontend.git
+git clone https://github.com/<your-github-username>/Aurevik.in--Frontend.git
 ```
 
 4. **Navigate to the project directory**
 
 ```bash
-cd ConnectRent.in--Frontend
+cd Aurevik.in--Frontend
 ```
 
 5. **Create a new branch**
@@ -233,7 +233,7 @@ git push -u origin <your_branch_name>
 
 # Questions ❓
 
-If you have any questions or need further assistance, feel free to reach out to the maintainers or join the discussions in the [Discussions](https://github.com/your-username/ConnectRent.in/discussions) section.
+If you have any questions or need further assistance, feel free to reach out to the maintainers or join the discussions in the [Discussions](https://github.com/your-username/Aurevik.in/discussions) section.
 
 <br>
 
