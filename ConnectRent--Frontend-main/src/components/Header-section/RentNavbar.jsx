@@ -29,11 +29,7 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
           </button>
           <div className="text-textWhite">
             <div className="px-4 bg-textWhite w-fit rounded-xl">
-              <img
-                className="self-start w-40 "
-                src={logo}
-                alt="ConnectRent-logo"
-              />
+              <img className="self-start w-40 " src={logo} alt="Aurevik-logo" />
             </div>
 
             <div className="mt-4 h-[2px] w-600 bg-textWhite rounded-full"></div>
@@ -154,7 +150,7 @@ const RentNavbar = ({ darkMode, toggleDarkMode }) => {
               <img
                 className="self-start w-40 navbar my-auto"
                 src={logo}
-                alt="ConnectRent-logo"
+                alt="Aurevik-logo"
               />
             </a>
           </div>

@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Feature Request"
-about: Suggest an idea to improve the ConnectRent.in frontend
+about: Suggest an idea to improve the Aurevik.in frontend
 title: "[FEATURE]"
 labels: ""
 assignees: ""

@@ -33,9 +33,9 @@ const ourServices = [
     id: 3,
     bgColor: "bg-[#D1F2EB]",
     bgImg: services_3,
-    title: " Effortless Maintenance Management with Hands-Off Coordination",
+    title: " Seamless NRI Property Management and Tenant Credit Validation",
     description:
-      "Tenants submit requests through the app, while you categorize, prioritize, and update statuses. Free maintenance personnel accounts make team collaboration easy.",
+      "Tenants apply through the app, and you get real-time credit scores to assess reliability. Automate verification, track property status, and ensure peace of mind from anywhere in the world.Free manager and field agent accounts simplify remote coordination.",
     icon: iconPencil,
     alt: "iconPencil",
     aos: "fade-right",

@@ -9,7 +9,7 @@ export const ContactText = () => {
   return (
     <section className="mt-0 bg-gray-100  rounded-lg shadow-lg flex flex-col gap-6 justify-center  p-1 lg:w-[35%] w-full">
       <div className="text-gray-800" data-aos="fade-right">
-        <h2 className="text-xl font-bold mb-4">Hey ConnectRent Users,</h2>
+        <h2 className="text-xl font-bold mb-4">Hey Aurevik Users,</h2>
         <p className="leading-relaxed">
           We are always looking forward to hearing from you. Please feel free to
           reach out to us for any queries, suggestions, or feedback. <br />
@@ -21,7 +21,7 @@ export const ContactText = () => {
           <p>
             Email:{" "}
             <a
-              href="mailto:support@ConnectRent.in"
+              href="mailto:support@Aurevik.in"
               className="ml-1 font text-gray-800 underline"
             >
               {" "}
@@ -45,13 +45,13 @@ export const ContactText = () => {
         </div>
 
         <p className="mt-4 leading-relaxed">
-          We welcome your input to improve your ConnectRent experience. <br />
+          We welcome your input to improve your Aurevik experience. <br />
           Thank you for choosing Connect!
         </p>
         <p className="mt-2">
           Best regards,
           <br />
-          The ConnectRent Team
+          The Aurevik Team
         </p>
       </div>
     </section>

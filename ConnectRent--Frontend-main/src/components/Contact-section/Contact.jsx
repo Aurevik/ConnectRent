@@ -54,21 +54,13 @@ const Contact = () => {
               <p>
                 Email:
                 <a
-                  href="mailto:support@ConnectRent.in"
+                  href="mailto:support@Aurevik.in"
                   className="ml-1 font-bold underline text-primaryGreen"
                 >
                   connect.aurevik@gmail.com
                 </a>
               </p>
-              <p>
-                Phone:
-                <a
-                  href="tel:+91"
-                  className="ml-1 font-bold underline text-primaryGreen"
-                >
-                  +91
-                </a>
-              </p>
+              
               <p>
                 Address: NIT Warangal <br /> Telangana, 506004
               </p>

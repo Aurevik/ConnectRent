@@ -42,7 +42,7 @@ const Header = () => {
         <div className="header-text top-[15%] sm:top-[23%] absolute">
           <h1>
             Welcome to <br />
-            <span>ConnectRent</span>
+            <span>Aurevik</span>
           </h1>
           <p className="header-desc">
             All-in-One Property Management Software For Landlords. Easy to use

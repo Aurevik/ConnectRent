@@ -103,7 +103,7 @@ const Navbar = () => {
   return (
     <div className="absolute top-4 left-4">
       <Link to="/">
-        <img src={logo} alt="ConnectRent-logo" className="h-12 w-auto" />
+        <img src={logo} alt="Aurevik-logo" className="h-12 w-auto" />
       </Link>
     </div>
   );

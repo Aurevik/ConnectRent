@@ -331,7 +331,7 @@ const Navbar = () => {
       <Link to="/">
         <img
           src={logo}
-          alt="ConnectRent-logo"
+          alt="Aurevik-logo"
           className="h-12 w-auto lg:mt-[-1rem]"
         />
       </Link>

@@ -1,4 +1,4 @@
-// /c:/Users/Asus/OneDrive/Desktop/Open Source Contribution/ConnectRent.in--Frontend/src/pages/ComingSoon.jsx
+// /c:/Users/Asus/OneDrive/Desktop/Open Source Contribution/Aurevik.in--Frontend/src/pages/ComingSoon.jsx
 
 import React from "react";
 import { FaClock, FaTools } from "react-icons/fa";
